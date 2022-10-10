@@ -3,6 +3,9 @@ import PackageDescription
 
 var package = Package(
     name: "ImGui",
+    platforms: [
+        .macOS(.v12)
+    ],
     products: [
         .library(name: "ImGui", targets: ["ImGui"])
     ],
